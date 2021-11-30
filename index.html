@@ -4,9 +4,109 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="static/style.css" />
+
+    <title>Google Developer Student Clubs BVP DET-Navi Mumbai</title>
   </head>
   <body>
-      
+    <!-- NAVBAR part start -->
+    <header class="header-area">
+      <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+          <img src="img/logo.svg" alt="Logo" class="logo" />
+        </a>
+        <div class="mr-auto"></div>
+
+        <button class="navbar-menu" onclick="openNav()">
+          <img src="img/Desktop-menu-icon.svg" alt="Logo" class="menu-icon" />
+        </button>
+      </nav>
+      <!-- side menu -->
+      <div id="mySidepanel" class="sidepanel">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+          <img src="img/go-back.svg" alt="Back"
+        /></a>
+        <a class="smenu" href="#">Home</a>
+        <a class="smenu" href="#">About Us</a>
+        <a class="smenu" href="#">Team</a>
+        <a class="smenu" href="#">Projects</a>
+        <a class="smenu" href="#">Blogs</a>
+        <a class="smenu" href="#">Contact Us</a>
+      </div>
+      <!-- Dark Overlay element -->
+      <div class="overlay" id="overlay"></div>
+    </header>
+    <!-- Main part start -->
+    <main class="site-main">
+      <!-- hero area start -->
+      <div class="hero-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="hero-left">
+                <div class="hero-title">
+                  <span class="g1">G</span><span class="o1">o</span
+                  ><span class="o2">o</span><span class="g2">g</span
+                  ><span class="l">l</span><span class="e">e</span> Developer
+                  Student Clubs
+                </div>
+                <div class="hero-desc">
+                  At GDSC BVP DET - Navi Mumbai, we aim to create a bridge
+                  between theoretical and practical based learning by Innovating
+                  <span class="o2"> - </span>Creating
+                  <span class="e"> - </span> Collaborating.
+                </div>
+                <button class="hero-btn">Join our Community</button>
+              </div>
+            </div>
+            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
+              <div class="hero-right">
+                <img
+                  src="img/hero.png"
+                  alt="hero img"
+                  class="img-fluid hero-image"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- line part remaining to be added -->
+
+          <div class="social-hero-icons">
+            <a href="#"><img src="img/Instagram.svg" alt="Intragram" /></a>
+            <a href="#"><img src="img/github.svg" alt="github" /></a>
+            <a href="#"><img src="img/Mail.svg" alt="mail" /></a>
+            <a href="#"><img src="img/Discord.svg" alt="discord" /></a>
+          </div>
+        </div>
+        <div class="line-left"></div>
+        <div class="line-right"></div>
+      </div>
+      <!-- hero area end-->
+      <!-- about us section start -->
+      <div class="about-area"></div>
+    </main>
+
+    <!-- jQuery and Bootstrap Bundle -->
+    <script src="script/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
