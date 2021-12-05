@@ -13,12 +13,14 @@ body {
   --para-font-size: 1.3rem;
   --super-header-font-size: 4rem;
   --super-header-font-size-mobile: 4rem !important;
-  --header-font-size: 4rem;
+  /* --header-font-size: 2rem; */
+  --footer-header-font-size: 2.5rem;
+  /* --footer-para-font-size: 2rem; */
 }
 
 /* Navbar start */
 .navbar {
-  background-color: #202020 !important;
+  background-color: #fff !important;
   padding: 1rem 2rem;
 }
 .logo {
@@ -110,6 +112,13 @@ body {
 }
 
 .hero-left {
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-flow: column wrap;
+}
+.hero-right {
   position: absolute;
   height: 100vh !important;
   display: flex;
@@ -137,7 +146,7 @@ body {
 }
 .hero-title {
   font-size: var(--super-header-font-size);
-  font-weight: 800;
+  font-weight: 900;
   font-family: var(--Nunito);
   line-height: 1.1;
   color: #fff;
@@ -156,6 +165,7 @@ body {
   background-color: #4286f5;
   color: #fff;
   font-family: var(--Lato);
+  font-weight: 700;
   padding: 0.5rem 2rem;
   font-size: var(--para-font-size) !important;
   border-radius: 0.6rem;
@@ -165,15 +175,9 @@ body {
 .hero-btn:hover {
   box-shadow: inset 16rem 0 0 0 #fabb04;
 }
-.hero-right {
-  height: 100vh !important;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  flex-flow: column wrap;
-}
+
 .hero-image {
-  margin-top: 0.5rem;
+  margin-top: 10rem;
 }
 .social-hero-icons img {
   margin-top: -2.5rem;
@@ -200,54 +204,193 @@ body {
   background-color: #202020;
   height: 100vh !important;
 }
+/* work area */
+.work-area {
+  border-top: #202020 solid 0.1rem;
+  background-color: #fff;
+  height: 100vh !important;
+}
+
+/* blog area */
+.blog-area {
+  background-color: #202020;
+  height: 100vh !important;
+}
+
+.blog-right {
+  margin-top: -3rem;
+  position: absolute;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
+.blog-desc {
+  margin-top: 0.5rem;
+  font-size: var(--para-font-size);
+  font-weight: 300;
+  width: 18rem;
+  font-family: var(--Nunito);
+  line-height: 1.5;
+  color: #fff;
+  padding-bottom: 2rem;
+}
+.blog-btn {
+  background-color: #4286f5;
+  color: #fff;
+  font-family: var(--Lato);
+  font-weight: 700;
+  padding: 0.5rem 4rem;
+  font-size: var(--para-font-size) !important;
+  border-radius: 0.6rem;
+  border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+
+/* contact area  */
+.contact-area {
+  background-color: #4286f5 !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
+.contact-title {
+  font-size: var(--super-header-font-size);
+  font-weight: 900;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+.contact-desc {
+  font-size: var(--para-font-size);
+  font-weight: 600;
+  font-family: var(--Nunito);
+  line-height: 1.5;
+  color: #fff;
+  margin: 5rem 30rem 2rem 30rem;
+}
+.contact-btn {
+  margin-top: 2rem;
+  background-color: #fabb04;
+  color: #fff;
+  font-family: var(--Lato);
+  padding: 0.5rem 2rem;
+  font-size: var(--para-font-size) !important;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+.social-contact-icons img {
+  margin-top: 3rem;
+  margin-right: 1rem;
+}
+
+/* Have a project  */
+.have-a-project {
+  background-color: #202020 !important;
+  height: 100vh !important;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-flow: column wrap;
+}
+.project-title {
+  font-size: var(--super-header-font-size);
+  font-weight: 900;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  color: #fff;
+}
+.project-desc {
+  font-size: var(--para-font-size);
+  font-weight: 600;
+  font-family: var(--Nunito);
+  line-height: 1.5;
+  color: #fff;
+  margin: 5rem 29rem 2rem 29rem;
+}
+.project-btn {
+  margin-top: 2rem;
+  background-color: #109d58;
+  color: #fff;
+  font-family: var(--Lato);
+  padding: 0.5rem 2rem;
+  font-size: var(--para-font-size) !important;
+  border-radius: 0.6rem;
+  font-weight: 700;
+  border: transparent !important;
+  transition: all 0.3s ease-in-out;
+}
+.project-btn:hover {
+  box-shadow: inset 10rem 0 0 0 #fabb04;
+}
+
+/* footer */
+.footer-area {
+  padding: 5rem 0 2rem 0;
+  background-color: #202020;
+  height: 60% !important;
+  color: #fff;
+  border-top: #fff solid 0.15rem;
+}
+
+.footer-title {
+  font-size: var(--footer-header-font-size);
+  font-weight: 800;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+  /* padding-bottom: 2rem; */
+}
+.social-footer-icons img {
+  margin-top: 2rem;
+  margin-right: 1rem;
+  width: 14%;
+}
+.footer-center-desc {
+  font-size: var(--para-font-size);
+  font-weight: 400;
+  font-family: var(--Nunito);
+  margin-top: 1rem;
+}
+.footer-btn {
+  margin-top: 1.5rem;
+}
+.footer-right-title {
+  width: 70%;
+}
+.footer-right-desc {
+  margin-top: 1.8rem;
+  display: flex;
+  font-size: var(--para-font-size);
+  font-weight: 400;
+  font-family: var(--Nunito);
+  line-height: 1.1;
+}
+.made-with-love {
+  margin-top: 8rem;
+  font-size: var(--para-font-size);
+  font-weight: 300;
+  font-family: var(--Nunito);
+}
+.footer-team {
+  color: #ea4235;
+  font-size: 1.5rem;
+  text-decoration: underline solid #ea4235;
+}
+.footer-team:hover {
+  color: #ea4235;
+}
 
 /* media queries */
 @media only screen and (max-width: 768px) {
   .navbar {
-    padding: 1rem 1rem !important;
-  }
-  .logo {
-    width: 70%;
-  }
-  .nav-item {
-    padding: 1rem 0 0 0.2rem;
-  }
-  .menu-icon {
-    width: 4.3rem !important;
-    margin-top: -4.5rem !important;
-  }
-
-  .navbar-brand {
-    width: auto !important;
-  }
-  .name-para {
-    color: #fff;
-    font-family: var(--Nunito);
-    font-size: 0.9rem;
-    font-weight: 600;
-  }
-
-  .hero-area {
-    height: 100vh;
+    background-color: #fff !important;
+    padding: 0.1rem 0.4rem;
     width: 100% !important;
-  }
-  .hero-left {
-    height: 100vh !important;
-  }
-  .hero-title {
-    margin-top: -20rem;
-    font-size: 2rem;
-    width: 80vw;
-  }
-  .hero-desc {
-    font-size: 1rem;
-    width: 78vw;
-  }
-
-  .hero-right {
-    margin-top: 11rem;
-  }
-  .overlay {
-    display: none;
   }
 }
