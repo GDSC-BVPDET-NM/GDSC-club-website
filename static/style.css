@@ -10,17 +10,36 @@ html {
 body {
   --Nunito: "Nunito", sans-serif;
   --Lato: "Lato", sans-serif;
-  --para-font-size: 1.3rem;
-  --super-header-font-size: 4rem;
-  --super-header-font-size-mobile: 4rem !important;
+  --para-font-size: 1.2rem;
+  --para-font-size-mobile: 1rem;
+  --super-header-font-size: 3.5rem;
+  --super-header-font-size-mobile: 2.5rem !important;
   /* --header-font-size: 2rem; */
-  --footer-header-font-size: 2.5rem;
+  --footer-header-font-size: 2.2rem;
   /* --footer-para-font-size: 2rem; */
+
+  overflow-x: hidden !important;
+
+
+  --primary-color: #202020;
+  --red-color: #EA4235;
+  --blue-color: #4286F5;
+  --green-color: #109D58;
+  --yellow-color: #FABB04;
+}
+
+.para{
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: white !important;
+  font-family: var(--Nunito);
+  text-align: center;
+  margin-top:2rem !important;
 }
 
 /* Navbar start */
 .navbar {
-  background-color: #fff !important;
+  background-color: var(--primary-color) !important;
   padding: 1rem 2rem;
 }
 .logo {
@@ -102,13 +121,15 @@ body {
 .container-md,
 .container-sm,
 .container-xl {
-  max-width: 1300px;
+  max-width: 1200px;
 }
 
 /* hero */
 .hero-area {
   background-color: #202020;
   height: 100vh !important;
+  display: flex;
+  align-items: center;
 }
 
 .hero-left {
@@ -150,19 +171,18 @@ body {
   font-family: var(--Nunito);
   line-height: 1.1;
   color: #fff;
-  margin-bottom: 2rem;
 }
 .hero-desc {
   font-size: var(--para-font-size);
   font-weight: 300;
-  width: 35rem;
+  width: 30rem;
   font-family: var(--Nunito);
   line-height: 1.5;
   color: #fff;
-  padding-bottom: 2rem;
+  margin: 3rem 0 2rem 0;
 }
 .hero-btn {
-  background-color: #4286f5;
+  background-color: var(--blue-color);
   color: #fff;
   font-family: var(--Lato);
   font-weight: 700;
@@ -172,12 +192,22 @@ body {
   border: transparent !important;
   transition: all 0.3s ease-in-out;
 }
+
+.team-area .hero-btn {
+  background-color: var(--yellow-color);
+}
+
+.team-area .hero-btn:hover {
+  box-shadow: inset 16rem 0 0 0 var(--blue-color);
+}
+
 .hero-btn:hover {
   box-shadow: inset 16rem 0 0 0 #fabb04;
 }
 
 .hero-image {
-  margin-top: 10rem;
+  margin-top: 5rem;
+  width: 90%;
 }
 .social-hero-icons img {
   margin-top: -2.5rem;
@@ -202,8 +232,82 @@ body {
 
 .about-area {
   background-color: #202020;
-  height: 100vh !important;
+  height: 100% !important;
+  padding: 15rem 0 5rem 0;
+  display: flex;
+  align-items: center;
 }
+
+.about-area .hero-btn {
+  background-color: var(--green-color);
+}
+
+.about-area .hero-btn:hover {
+  box-shadow: inset 16rem 0 0 0 var(--blue-color);
+}
+
+.about-img{
+  margin-top:-3rem;
+}
+
+.list-row{
+  margin-top: 10rem !important;
+}
+
+.about-list{
+  list-style-type: none;
+  color: white !important;
+  font-size: var(--para-font-size);
+  font-weight: 600 !important;
+}
+
+.about-list li{
+  display: inline;
+  margin-right: 2.5rem;
+  cursor: pointer;
+  
+  position: relative;
+  top: 0;
+  transition: all ease-in 0.3s;
+}
+
+.about-list li:nth-child(1):hover,.about-list li:nth-child(5):hover{
+  top: -10px;
+  color: var(--red-color) !important;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--red-color) !important;
+}
+
+.about-list li:nth-child(2):hover,.about-list li:nth-child(6):hover{
+  top: -10px;
+  color: var(--blue-color) !important;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--blue-color) !important;
+}
+
+.about-list li:nth-child(3):hover,.about-list li:nth-child(7):hover{
+  top: -10px;
+  color: var(--yellow-color) !important;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--yellow-color) !important;
+}
+
+.about-list li:nth-child(4):hover,.about-list li:nth-child(8):hover{
+  top: -10px;
+  color: var(--green-color) !important;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--green-color) !important;
+}
+
+/* team area  */
+.team-area{
+  background-image: url('/img/team-home-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding:7rem 0;
+}
+
 /* work area */
 .work-area {
   border-top: #202020 solid 0.1rem;
@@ -218,23 +322,16 @@ body {
 }
 
 .blog-right {
-  margin-top: -3rem;
-  position: absolute;
-  height: 100vh !important;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  flex-flow: column wrap;
 }
+
 .blog-desc {
-  margin-top: 0.5rem;
+  margin: 3rem 0 2rem 0 !important;
   font-size: var(--para-font-size);
   font-weight: 300;
   width: 18rem;
   font-family: var(--Nunito);
   line-height: 1.5;
   color: #fff;
-  padding-bottom: 2rem;
 }
 .blog-btn {
   background-color: #4286f5;
@@ -332,7 +429,7 @@ body {
 
 /* footer */
 .footer-area {
-  padding: 5rem 0 2rem 0;
+  padding: 8rem 0 2rem 0;
   background-color: #202020;
   height: 60% !important;
   color: #fff;
@@ -372,7 +469,7 @@ body {
   line-height: 1.1;
 }
 .made-with-love {
-  margin-top: 8rem;
+  margin-top: 11rem;
   font-size: var(--para-font-size);
   font-weight: 300;
   font-family: var(--Nunito);
@@ -386,11 +483,83 @@ body {
   color: #ea4235;
 }
 
+.location-footer{
+  margin-right: 1rem;
+}
+
 /* media queries */
 @media only screen and (max-width: 768px) {
-  .navbar {
-    background-color: #fff !important;
-    padding: 0.1rem 0.4rem;
-    width: 100% !important;
+  body{
+    width: 100vw !important;
+    overflow-x: hidden;
   }
+
+  .navbar {
+    background-color: var(--primary-color) !important;
+    padding: 1rem 1rem;
+    width: 100vw !important;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    width: 90%;
+  }
+  .menu-icon {
+    width: 90% !important;
+  }
+
+  .hero-title{
+    font-size: var(--super-header-font-size-mobile);
+  }
+
+  .hero-desc{
+    font-size: var(--para-font-size-mobile);
+    width: auto;
+    margin: 2rem 0;
+  }
+
+  .about-area {
+    background-color: #202020;
+    height: 100% !important;
+    padding: 10rem 0 5rem 0;
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-area .hero-btn {
+    background-color: var(--green-color);
+  }
+  
+  .about-area .hero-btn:hover {
+    box-shadow: inset 16rem 0 0 0 var(--blue-color);
+  }
+  
+  .about-img{
+    margin-top:-3rem;
+    margin-bottom: 5rem !important;
+  }
+  
+  .list-row{
+    margin-top: 8rem !important;
+    overflow-x: scroll !important;
+  }
+  
+  .about-list{
+    list-style-type: none;
+    color: white !important;
+    font-size: var(--para-font-size-mobile);
+    font-weight: 600 !important;
+  }
+  
+  .about-list li{
+    display: inline;
+    margin-right: 2.5rem;
+    cursor: pointer;
+    
+    position: relative;
+    top: 0;
+    transition: all ease-in 0.3s;
+  }
+  
+
 }
