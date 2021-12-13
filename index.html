@@ -35,14 +35,14 @@
       <!-- side menu -->
       <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          <img src="img/go-back.svg" alt="Back"
+          <img src="img/go-back.svg" alt="Back" class="back-icon"
         /></a>
-        <a class="smenu" href="#">Home</a>
-        <a class="smenu" href="#">About Us</a>
-        <a class="smenu" href="#">Team</a>
-        <a class="smenu" href="#">Projects</a>
-        <a class="smenu" href="#">Blogs</a>
-        <a class="smenu" href="#">Contact Us</a>
+        <a onclick="closeNav()" class="smenu" href="./index.html">Home</a>
+        <a onclick="closeNav()" class="smenu" href="#aboutArea">About Us</a>
+        <a onclick="closeNav()" class="smenu" href="./template/coreTeam.html">Team</a>
+        <a onclick="closeNav()" class="smenu" target="_blank" href="https://github.com/GDSC-BVP-DET-Navi-Mumbai">Projects</a>
+        <a onclick="closeNav()" class="smenu" href="#">Blogs</a>
+        <a onclick="closeNav()" class="smenu" href="#contactArea">Contact Us</a>
       </div>
       <!-- Dark Overlay element -->
       <div class="overlay" id="overlay"></div>
@@ -93,10 +93,11 @@
             </div>
           </div>
         </div>
+        <!-- <div class="scroll-down"></div> -->
       </div>
       <!-- hero area end-->
       <!-- about us section start -->
-      <section class="about-area">
+      <section class="about-area" id="aboutArea">
         <div class="container">
           <div class="row">
             <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
@@ -151,8 +152,18 @@
       </section>
       
       <!-- work -->
-      <div class="work-area">
-        <div class="container"></div>
+      <div class="work-area" id="workArea">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="hero-title">
+                Project Works
+              </h1>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12"></div>
+          </div>
+          <div class="repositories"></div>
+        </div>
       </div>
       <!-- blog section start -->
       <div class="blog-area">
@@ -175,7 +186,7 @@
                   Our prime focus is to learn and disseminate knowledge. Our
                   team roll out blogs regularly on medium.
                 </div>
-                <button class="blog-btn">The Team</button>
+                <button class="hero-btn mt-5">Explore Now!</button>
              </div>
            </div>
          </div>
@@ -183,7 +194,7 @@
       </div>
 
       <!-- contact us section start -->
-      <div class="contact-area">
+      <div class="contact-area" id="contactArea">
         <div class="container">
           <div class="contact-title text-center">
             Don't be shy <br />
@@ -194,7 +205,7 @@
             idea together, hop on with us , on this journey.
           </div>
           <div class="col-md-12 text-center">
-            <button class="contact-btn">Get Latest Updates</button>
+            <button class="hero-btn mt-5">Get Latest Updates</button>
 
             <div class="social-contact-icons">
               <a href="#"><img src="img/Instagram.svg" alt="Intragram" /></a>
@@ -267,7 +278,7 @@
         <div class="made-with-love">
           <div class="text-center">
             Made in love &hearts by the
-            <a class="footer-team" href="#">team</a> of GDSC Bharati Vidyapeeth
+            <a class="footer-team" href="./template/websiteTeam.html">team</a> of GDSC Bharati Vidyapeeth
             Department of Engineering and Technology - Navi Mumbai
           </div>
         </div>

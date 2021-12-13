@@ -198,3 +198,19 @@ height: 9.2rem;
   margin-top: -10.6rem;
   width: 9.6rem;
 }
+
+.center-col{
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width:768px) {
+  .card-col-1{
+    position: relative;
+}
+
+.card-col-3{
+    position: relative;
+    top: 6rem;
+}
+}

@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="coreStyle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     
     <link rel="stylesheet" href="../static/style.css">
@@ -17,44 +16,38 @@
       crossorigin="anonymous"
     />
 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@900&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,900;1,200&display=swap" rel="stylesheet">
-
     <title>Core Team</title>
 </head>
 <body>
    
     <!-- NAVBAR part start -->
-<header class="header-area">
-    <!-- navbar start -->
-    <nav class="navbar navbar-expand-lg fixed-top">
-      <a class="navbar-brand" href="#">
-        <img src="../img/logo.svg" alt="Logo" class="logo" />
-      </a>
-      <div class="mr-auto"></div>
-
-      <button class="navbar-menu" onclick="openNav()">
-        <img src="../img/Desktop-menu-icon.svg" alt="Logo" class="menu-icon" />
-      </button>
-    </nav>
-    <!-- side menu -->
-    <div id="mySidepanel" class="sidepanel">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-        <img src="../img/go-back.svg" alt="Back"
-      /></a>
-      <a class="smenu" href="#">Home</a>
-      <a class="smenu" href="#">About Us</a>
-      <a class="smenu" href="#">Team</a>
-      <a class="smenu" href="#">Projects</a>
-      <a class="smenu" href="#">Blogs</a>
-      <a class="smenu" href="#">Contact Us</a>
-    </div>
-    <!-- Dark Overlay element -->
-    <div class="overlay" id="overlay"></div>
-  </header>
+    <header class="header-area">
+        <!-- navbar start -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+          <a class="navbar-brand" href="#">
+            <img src="../img/logo.svg" alt="Logo" class="logo" />
+          </a>
+          <div class="mr-auto"></div>
+  
+          <button class="navbar-menu" onclick="openNav()">
+            <img src="../img/Desktop-menu-icon.svg" alt="Logo" class="menu-icon" />
+          </button>
+        </nav>
+        <!-- side menu -->
+        <div id="mySidepanel" class="sidepanel">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img src="../img/go-back.svg" alt="Back" class="back-icon"
+          /></a>
+          <a onclick="closeNav()" class="smenu" href="./index.html">Home</a>
+          <a onclick="closeNav()" class="smenu" href="#aboutArea">About Us</a>
+          <a onclick="closeNav()" class="smenu" href="./template/coreTeam.html">Team</a>
+          <a onclick="closeNav()" class="smenu" target="_blank" href="https://github.com/GDSC-BVP-DET-Navi-Mumbai">Projects</a>
+          <a onclick="closeNav()" class="smenu" href="#">Blogs</a>
+          <a onclick="closeNav()" class="smenu" href="#contactArea">Contact Us</a>
+        </div>
+        <!-- Dark Overlay element -->
+        <div class="overlay" id="overlay"></div>
+      </header>
   <!-- Main part start -->
    
 
@@ -75,10 +68,10 @@
   <section class="team-cards">
     <div class="container">
         <div class="row card-row">
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col">
                 
             </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col">
                 <div class="card lead-card">
                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                     <div class="card_content">
@@ -114,12 +107,12 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col">
                 
             </div>
         </div>
         <div class="row card-row">
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-1">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-1">
                 <div class="card core-team-card">
                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                     <div class="card_content">
@@ -155,7 +148,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-2">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-2">
                 <div class="card core-team-card">
                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                     <div class="card_content">
@@ -191,117 +184,7 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-3">
-                <div class="card core-team-card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-                    <div class="card_content">
-                      <h4 class="card_title">Core Team Member</h4>
-                      <h1 class="card_text">Name-Surname </h1>
-                      <div class="card-logo_item">
-                      <div class="card-logo">
-                          <a href="http://">
-                              <img src="../img/LinkedIN_white.svg" alt="" srcset="">
-                          </a>
-                      </div>
-       
-                      <div class="card-logo1">
-                          <a href="http://">
-                              <img src="../img/Instagram_black.svg" alt="" srcset="">
-                          </a>
-                     
-                      </div>
-                      
-                      <div class="card-logo2">
-                          <a href="http://">
-                              <img src="../img/Github_black.svg" alt="" srcset="">
-                          </a>
-                     
-                      </div>
-                      <div class="card-logo3">
-                          <a href="http://">
-                              <img src="../img/www..svg" alt="" srcset="">
-                          </a>
-                      
-                      </div>
-                  </div>
-                    </div>
-                  </div>
-            </div>
-        </div>
-        <div class="row card-row">
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-1">
-                <div class="card core-team-card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-                    <div class="card_content">
-                      <h4 class="card_title">Core Team Member</h4>
-                      <h1 class="card_text">Name-Surname </h1>
-                      <div class="card-logo_item">
-                      <div class="card-logo">
-                          <a href="http://">
-                              <img src="../img/LinkedIN_white.svg" alt="" srcset="">
-                          </a>
-                      </div>
-       
-                      <div class="card-logo1">
-                          <a href="http://">
-                              <img src="../img/Instagram_black.svg" alt="" srcset="">
-                          </a>
-                     
-                      </div>
-                      
-                      <div class="card-logo2">
-                          <a href="http://">
-                              <img src="../img/Github_black.svg" alt="" srcset="">
-                          </a>
-                     
-                      </div>
-                      <div class="card-logo3">
-                          <a href="http://">
-                              <img src="../img/www..svg" alt="" srcset="">
-                          </a>
-                      
-                      </div>
-                  </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-2">
-                <div class="card core-team-card">
-                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
-                    <div class="card_content">
-                      <h4 class="card_title">Core Team Member</h4>
-                      <h1 class="card_text">Name-Surname </h1>
-                      <div class="card-logo_item">
-                      <div class="card-logo">
-                          <a href="http://">
-                              <img src="../img/LinkedIN_white.svg" alt="" srcset="">
-                          </a>
-                      </div>
-       
-                      <div class="card-logo1">
-                          <a href="http://">
-                              <img src="../img/Instagram_black.svg" alt="" srcset="">
-                          </a>
-                     
-                      </div>
-                      
-                      <div class="card-logo2">
-                          <a href="http://">
-                              <img src="../img/Github_black.svg" alt="" srcset="">
-                          </a>
-                     
-                      </div>
-                      <div class="card-logo3">
-                          <a href="http://">
-                              <img src="../img/www..svg" alt="" srcset="">
-                          </a>
-                      
-                      </div>
-                  </div>
-                    </div>
-                  </div>
-            </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-3">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-3">
                 <div class="card core-team-card">
                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                     <div class="card_content">
@@ -339,7 +222,7 @@
             </div>
         </div>
         <div class="row card-row">
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-1">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-1">
                 <div class="card core-team-card">
                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                     <div class="card_content">
@@ -375,10 +258,120 @@
                     </div>
                   </div>
             </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-2">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-2">
+                <div class="card core-team-card">
+                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Name-Surname </h1>
+                      <div class="card-logo_item">
+                      <div class="card-logo">
+                          <a href="http://">
+                              <img src="../img/LinkedIN_white.svg" alt="" srcset="">
+                          </a>
+                      </div>
+       
+                      <div class="card-logo1">
+                          <a href="http://">
+                              <img src="../img/Instagram_black.svg" alt="" srcset="">
+                          </a>
+                     
+                      </div>
+                      
+                      <div class="card-logo2">
+                          <a href="http://">
+                              <img src="../img/Github_black.svg" alt="" srcset="">
+                          </a>
+                     
+                      </div>
+                      <div class="card-logo3">
+                          <a href="http://">
+                              <img src="../img/www..svg" alt="" srcset="">
+                          </a>
+                      
+                      </div>
+                  </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-3">
+                <div class="card core-team-card">
+                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Name-Surname </h1>
+                      <div class="card-logo_item">
+                      <div class="card-logo">
+                          <a href="http://">
+                              <img src="../img/LinkedIN_white.svg" alt="" srcset="">
+                          </a>
+                      </div>
+       
+                      <div class="card-logo1">
+                          <a href="http://">
+                              <img src="../img/Instagram_black.svg" alt="" srcset="">
+                          </a>
+                     
+                      </div>
+                      
+                      <div class="card-logo2">
+                          <a href="http://">
+                              <img src="../img/Github_black.svg" alt="" srcset="">
+                          </a>
+                     
+                      </div>
+                      <div class="card-logo3">
+                          <a href="http://">
+                              <img src="../img/www..svg" alt="" srcset="">
+                          </a>
+                      
+                      </div>
+                  </div>
+                    </div>
+                  </div>
+            </div>
+        </div>
+        <div class="row card-row">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-1">
+                <div class="card core-team-card">
+                    <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
+                    <div class="card_content">
+                      <h4 class="card_title">Core Team Member</h4>
+                      <h1 class="card_text">Name-Surname </h1>
+                      <div class="card-logo_item">
+                      <div class="card-logo">
+                          <a href="http://">
+                              <img src="../img/LinkedIN_white.svg" alt="" srcset="">
+                          </a>
+                      </div>
+       
+                      <div class="card-logo1">
+                          <a href="http://">
+                              <img src="../img/Instagram_black.svg" alt="" srcset="">
+                          </a>
+                     
+                      </div>
+                      
+                      <div class="card-logo2">
+                          <a href="http://">
+                              <img src="../img/Github_black.svg" alt="" srcset="">
+                          </a>
+                     
+                      </div>
+                      <div class="card-logo3">
+                          <a href="http://">
+                              <img src="../img/www..svg" alt="" srcset="">
+                          </a>
+                      
+                      </div>
+                  </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-2">
                 
             </div>
-            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 card-col-3">
+            <div class="col-lg-4 col-xl-4 col-md-6 col-sm-12 col-xs-12 center-col card-col-3">
                 <div class="card core-team-card">
                     <div class="card_image"><img src="https://picsum.photos/500/300/?image=10"></div>
                     <div class="card_content">
@@ -473,16 +466,16 @@
       
     <!-- Optional JavaScript; choose one of the two! -->
  <!-- jQuery and Bootstrap Bundle -->
- <script src="../script/index.js"></script>
- <script
-   src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-   integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-   crossorigin="anonymous"
- ></script>
- <script
-   src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-   integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
-   crossorigin="anonymous"
- ></script>
+ <script src="script/index.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
+      crossorigin="anonymous"
+    ></script>
 </body>
 </html>
