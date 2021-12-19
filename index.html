@@ -35,14 +35,14 @@
       <!-- side menu -->
       <div id="mySidepanel" class="sidepanel">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-          <img src="img/go-back.svg" alt="Back"
+          <img src="img/go-back.svg" alt="Back" class="back-icon"
         /></a>
-        <a class="smenu" href="#">Home</a>
-        <a class="smenu" href="#">About Us</a>
-        <a class="smenu" href="#">Team</a>
-        <a class="smenu" href="#">Projects</a>
-        <a class="smenu" href="#">Blogs</a>
-        <a class="smenu" href="#">Contact Us</a>
+        <a onclick="closeNav()" class="smenu" href="./index.html">Home</a>
+        <a onclick="closeNav()" class="smenu" href="#aboutArea">About Us</a>
+        <a onclick="closeNav()" class="smenu" href="./template/coreTeam.html">Team</a>
+        <a onclick="closeNav()" class="smenu" target="_blank" href="https://github.com/GDSC-BVP-DET-Navi-Mumbai">Projects</a>
+        <a onclick="closeNav()" class="smenu" href="#">Blogs</a>
+        <a onclick="closeNav()" class="smenu" href="#contactArea">Contact Us</a>
       </div>
       <!-- Dark Overlay element -->
       <div class="overlay" id="overlay"></div>
@@ -53,24 +53,14 @@
       <div class="hero-area">
         <div class="container">
           <div class="row">
-            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
-              <div class="hero-left">
-                <img
-                  src="img/hero.svg"
-                  alt="hero img"
-                  class="img-fluid hero-image"
-                />
-              </div>
-            </div>
-            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
-            <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
+             <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
               <div class="hero-right">
-                <div class="hero-title">
+                <h1 class="hero-title">
                   <span class="g1">G</span><span class="o1">o</span
                   ><span class="o2">o</span><span class="g2">g</span
                   ><span class="l">l</span><span class="e">e</span> Developer
                   Student Clubs
-                </div>
+                </h1>
                 <div class="hero-desc">
                   At GDSC BVP DET - Navi Mumbai, we aim to create a bridge
                   between theoretical and practical based learning by Innovating
@@ -78,6 +68,16 @@
                   <span class="e"> - </span> Collaborating.
                 </div>
                 <button class="hero-btn">Join our Community</button>
+              </div>
+            </div>
+            <!-- <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div> -->
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="hero-left">
+                <img
+                  src="img/hero.svg"
+                  alt="hero img"
+                  class="img-fluid hero-image"
+                />
               </div>
             </div>
           </div>
@@ -93,45 +93,108 @@
             </div>
           </div>
         </div>
+        <!-- <div class="scroll-down"></div> -->
       </div>
       <!-- hero area end-->
       <!-- about us section start -->
-      <div class="about-area"></div>
+      <section class="about-area" id="aboutArea">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
+              <img src="/img/about-img.svg" alt="About GDSC BVP DET-NM" class="img-fluid about-img" />
+            </div>
+            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="">
+                  <div class="hero-title">
+                    About Us
+                  </div>
+                  <div class="hero-desc">
+                    We are a community of designers, developers, managers and writers who throw in together to bring in a reformation. We love to innovate, ideate and build technical solutions to the everyday life problems. To inculcate the culture of technology,we organise various workshops and webinars. 
+                    <br><br>
+                    Our prime focus is to learn and disseminate knowledge. Our team roll out blogs regularly on medium.
+                    
+                  </div>
+                  <a href="/template/coreTeam.html" target="_blank"><button class="hero-btn">Know Us</button></a>
+                </div>
+            </div>
+          </div>
+          <div class="row list-row">
+            <ul class="about-list">
+              <li>UX/UI</li>
+              <li>ML/Data science</li>
+              <li>Flutter Dev</li>
+              <li>Web Dev</li>
+              <li>Graphics</li>
+              <li>Competitive Programming</li>
+              <li>Tech Club</li>
+              <li>Content</li>
+            </ul>
+          </div>
+          </div>
+          
+        
+      </section>
+
+      <!-- team -->
+      <section class="team-area">
+        <div class="container">
+          <div class="hero-title text-center">
+            Know the <br>Team!
+          </div>
+          
+          <div class="col-md-12 text-center">
+            <button class="hero-btn mt-5">The Team of 2021-22</button>
+
+            
+          </div>
+        </div>
+      </section>
+      
       <!-- work -->
-      <div class="work-area">
-        <div class="container"></div>
+      <div class="work-area" id="workArea">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+              <h1 class="hero-title">
+                Project Works
+              </h1>
+            </div>
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12"></div>
+          </div>
+          <div class="repositories"></div>
+        </div>
       </div>
       <!-- blog section start -->
       <div class="blog-area">
-        <div class="container">
+        <div class="container">    
           <div class="row">
-            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
-            <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
-              <div class="blog-left">
-                <img
-                  src="img/blog.svg"
-                  alt="hero img"
-                  class="img-fluid hero-image"
-                />
+            <div class="col-lg-6 col-xl-6 col-md-12 col-sm-12 col-xs-12">
+              <div class="hero-left">
+               <img
+               src="img/blog.svg"
+               alt="hero img"
+               class="img-fluid hero-image"
+             />
               </div>
             </div>
-            <div class="col-lg-2 col-xl-2 col-md-12 col-sm-12 col-xs-12"></div>
-            <div class="col-lg-4 col-xl-4 col-md-12 col-sm-12 col-xs-12">
-              <div class="blog-right">
-                <div class="hero-title">Our Blogs</div>
+            <div class="col-lg-1 col-xl-1 col-md-12 col-sm-12 col-xs-12"></div>
+            <div class="col-lg-5 col-xl-5 col-md-12 col-sm-12 col-xs-12">
+             <div class="hero-right">
+              <div class="hero-title">Our Blogs</div>
                 <div class="blog-desc">
                   Our prime focus is to learn and disseminate knowledge. Our
                   team roll out blogs regularly on medium.
                 </div>
-                <button class="blog-btn">The Team</button>
-              </div>
-            </div>
-          </div>
+                <button class="hero-btn mt-5">Explore Now!</button>
+             </div>
+           </div>
+         </div>
         </div>
       </div>
 
       <!-- contact us section start -->
-      <div class="contact-area">
+      <div class="contact-area" id="contactArea">
         <div class="container">
           <div class="contact-title text-center">
             Don't be shy <br />
@@ -142,7 +205,7 @@
             idea together, hop on with us , on this journey.
           </div>
           <div class="col-md-12 text-center">
-            <button class="contact-btn">Get Latest Updates</button>
+            <button class="hero-btn mt-5">Get Latest Updates</button>
 
             <div class="social-contact-icons">
               <a href="#"><img src="img/Instagram.svg" alt="Intragram" /></a>
@@ -215,7 +278,7 @@
         <div class="made-with-love">
           <div class="text-center">
             Made in love &hearts by the
-            <a class="footer-team" href="#">team</a> of GDSC Bharati Vidyapeeth
+            <a class="footer-team" href="./template/websiteTeam.html">team</a> of GDSC Bharati Vidyapeeth
             Department of Engineering and Technology - Navi Mumbai
           </div>
         </div>
