@@ -30,3 +30,10 @@ var request = new XMLHttpRequest();
             $('.repositories').html(statusHTML);
         }
         request.send();
+
+
+
+        var loader = document.getElementById('pre-loader');
+        window.addEventListener('load', function() {
+            loader.style.display = 'none';
+        });

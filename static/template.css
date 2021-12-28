@@ -17,6 +17,97 @@ body{
  font-family:  "Nunito", sans-serif !important;
 } 
 
+.navbar {
+  background-color: var(--primary-color) !important;
+  padding: 1rem 2rem;
+}
+.logo {
+  width: 80%;
+}
+.menu-icon {
+  width: 70% !important;
+}
+
+.nav-item {
+  padding: 1.5rem 1rem 0.1rem 1rem;
+}
+
+.navbar-menu {
+  background: transparent !important;
+  border: none !important;
+}
+
+/* The sidepanel menu */
+.sidepanel {
+  padding-top: 10rem !important;
+  background-color: #4286f5;
+  transition: all 0.5s ease-in-out;
+
+  height: 100vh;
+  width: 0%;
+  position: fixed;
+  z-index: 9999;
+  right: 0;
+  top: 0; /* Black w/opacity */
+  overflow: hidden;
+}
+
+/* The sidepanel links */
+
+.sidepanel .smenu {
+  text-decoration: none;
+  transition: 0.3s;
+  color: #fff;
+  font-family: var(--Nunito);
+  font-size: 2.5rem;
+  font-weight: 800;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 4.5rem 2rem 0;
+}
+
+.sidepanel .smenu:hover {
+  color: var(--yellow-color);
+}
+
+.smenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0px;
+}
+
+/* Position and style the close button (top right corner) */
+.sidepanel .closebtn {
+  position: absolute;
+  top: 2rem;
+  right: 2.5rem;
+}
+
+.overlay {
+  /* Height & width depends on how you want to reveal the overlay (see JS below) */
+  height: 100%;
+  width: 0%;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  background-color: #202020e0; /* Black w/opacity */
+  overflow-x: hidden;
+  transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+.container,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  max-width: 1200px;
+}
+
 .main-text{
   margin-top: 10rem;
 }
@@ -96,24 +187,6 @@ img {
     top: -8rem ;
 }
 
-
-@media (min-width: 40rem) {
-  .cards_item {
-    width: 50%;
-  }
-  .card_text{
-    margin-left: -4rem;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
-  }
-  .card_text{
-    margin-left: -4rem;
-  }
-}
 
 .card {
   background-color:  #FFFFFF;
@@ -213,4 +286,67 @@ height: 9.2rem;
     position: relative;
     top: 6rem;
 }
+
+.navbar {
+  background-color: var(--primary-color) !important;
+  padding: 1rem 1rem;
+  width: 100vw !important;
+  flex-wrap: nowrap !important;
+  /* display: none; */
+}
+
+
+
+.logo {
+  width: 90%;
+}
+.menu-icon, .back-icon {
+  width: 90% !important;
+}
+}
+
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+  .card-col-1{
+    position: relative;
+}
+
+.card-row:nth-child(2){
+  margin-top: 12rem !important;
+}
+
+.card-col-2{
+    position: relative;
+}
+
+.card-col-3{
+    position: relative;
+}
+
+.card-row{
+  margin-top:3rem;
+}
+
+.first{
+  order: 1;
+}
+
+.card_text {
+  color:#202020;
+  
+  font-size: 1.6rem !important;
+  margin-left: 0rem; 
+  font-weight: 800;
+
+  text-align: left !important;
+}
+
+.second{
+  order: 2;
+}
+
+.card_title {
+  font-size: 0.8rem !important;
+}
+
 }
